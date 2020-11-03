@@ -1,29 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
 
+:root {
+  --BASE-FONT-MEASURE: 16;
+  --BASE-FONT-PX: calc(var(--BASE-FONT-MEASURE) * 1px);
+  --BASE-FONT-REM: 1rem;
+  --MAX-SITE-WIDTH: 900;
+  --MAX-SITE-WIDTH-REM: calc((var(--MAX-SITE-WIDTH) / var(--BASE-FONT-MEASURE)) * 1rem);
+}
+
+html {
+  font-size: var(--BASE-FONT-PX);
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--BASE-FONT-REM);
+  max-width: var(--MAX-SITE-WIDTH-REM);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+main {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 h1 {
-    font-family: Lato, sans-serif;
+  font-family: Lato, sans-serif;
+  font-size: calc((38 / var(--BASE-FONT-MEASURE)) * 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
 }
 
 h2 {
-    font-family: Lato, sans-serif;
+  font-family: Lato, sans-serif;
+  font-size: calc((30 / var(--BASE-FONT-MEASURE)) * 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
 }
 
 h3 {
-    font-family: Lato, sans-serif;
+  font-family: Lato, sans-serif;
+  font-size: calc((26 / var(--BASE-FONT-MEASURE)) * 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
 }
 
 h4 {
-    font-family: Lato, sans-serif;
+  font-family: Lato, sans-serif;
+  font-size: calc((22 / var(--BASE-FONT-MEASURE)) * 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
 }
 
 h5 {
-    font-family: Lato, sans-serif;
+  font-family: Lato, sans-serif;
+  font-size: calc((18 / var(--BASE-FONT-MEASURE)) * 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
 }
 
 h6 {
-    font-family: Lato, sans-serif;
+  font-family: Lato, sans-serif;
+  font-size: var(--BASE-FONT-REM);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+address {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
 }
