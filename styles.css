@@ -95,10 +95,19 @@ header {
   background-color: #f3f0e1;
   padding: 2rem;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 section {
   background-color: #f3f0e1;
   padding: 2rem;
-  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+footer {
+  margin-bottom: 2rem;
+}
+
+footer a {
+  color: black;
 }
