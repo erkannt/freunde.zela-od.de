@@ -104,6 +104,11 @@ section {
   margin-bottom: 3rem;
 }
 
+.kontakt {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
 footer {
   margin-bottom: 2rem;
 }
