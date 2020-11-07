@@ -19,10 +19,10 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
   background-color: #cc4041;
+  margin-top: 3rem;
 }
 
 main {
-  margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -36,7 +36,6 @@ h1 {
 }
 
 h2 {
-  color: #2c2c2c;
   font-family: Lato, sans-serif;
   font-size: calc((30 / var(--BASE-FONT-MEASURE)) * 1rem);
   margin-top: 0;
