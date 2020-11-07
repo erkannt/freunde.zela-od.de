@@ -97,8 +97,32 @@ address {
 header {
   background-color: #f7f5ee;
   padding: 2rem;
-  margin-top: 3rem;
   margin-bottom: 3rem;
+  display: flex;
+}
+
+header img {
+  height: 100%;
+  max-height: 30vh;
+  min-width: 20vh;
+  margin-left: 2rem;
+}
+
+@media (max-width: 625px) {
+  header img {
+    visibility: hidden;
+    width: 0;
+    min-width: 0;
+    height: 0;
+  }
+}
+
+header div {
+  align-self: end;
+}
+
+header p {
+  margin: 0;
 }
 
 section {
