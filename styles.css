@@ -111,3 +111,24 @@ footer {
 footer a {
   color: black;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 0;
+}
+
+.gallery li {
+  max-width: 320px;
+  list-style: none;
+  background-color: #e0dfd9;
+}
+
+.gallery img {
+  max-width: 100%;
+}
+
+.gallery figcaption {
+  padding: 0.5rem;
+}
