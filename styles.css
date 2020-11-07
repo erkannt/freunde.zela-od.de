@@ -4,7 +4,7 @@
   --BASE-FONT-MEASURE: 16;
   --BASE-FONT-PX: calc(var(--BASE-FONT-MEASURE) * 1px);
   --BASE-FONT-REM: 1rem;
-  --MAX-SITE-WIDTH: 900;
+  --MAX-SITE-WIDTH: 1200;
   --MAX-SITE-WIDTH-REM: calc((var(--MAX-SITE-WIDTH) / var(--BASE-FONT-MEASURE)) * 1rem);
 }
 
@@ -18,6 +18,7 @@ body {
   max-width: var(--MAX-SITE-WIDTH-REM);
   margin: 0 auto;
   padding: 0 1rem;
+  background-color: #cc4041;
 }
 
 main {
@@ -35,6 +36,7 @@ h1 {
 }
 
 h2 {
+  color: #2c2c2c;
   font-family: Lato, sans-serif;
   font-size: calc((30 / var(--BASE-FONT-MEASURE)) * 1rem);
   margin-top: 0;
@@ -87,4 +89,16 @@ p {
 address {
   margin-bottom: 1.5rem;
   line-height: 1.5rem;
+}
+
+header {
+  background-color: #f3f0e1;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+section {
+  background-color: #f3f0e1;
+  padding: 2rem;
+  margin-top: 3rem;
 }
