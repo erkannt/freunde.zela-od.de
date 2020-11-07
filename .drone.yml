@@ -1,0 +1,17 @@
+---
+  kind: pipeline
+  type: docker
+  name: default
+  
+  steps:
+  - name: deploy
+    image: minio/mc
+    environment:
+      MINIO_ACCESS_KEY:
+        from_secret: MINIO_ACCESS_KEY
+      MINIO_SECRET_KEY:
+        from_secret: MINIO_SECRET_KEY
+    commands:
+    - mc config host add website https://website.minio.rknt.de $${MINIO_ACCESS_KEY} $${MINIO_SECRET_KEY}
+    - mc mb website/freunde-preview || true
+    - mc mirror --overwrite public website/freunde-preview
