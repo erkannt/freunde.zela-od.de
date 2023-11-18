@@ -1,0 +1,207 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Basic Styling (Fonts, headings, text elements)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+:root {
+  --BASE-FONT-MEASURE: 16;
+  --BASE-FONT-PX: calc(var(--BASE-FONT-MEASURE) * 1px);
+  --BASE-FONT-REM: 1rem;
+  --MAX-SITE-WIDTH: 1200;
+  --MAX-SITE-WIDTH-REM: calc((var(--MAX-SITE-WIDTH) / var(--BASE-FONT-MEASURE)) * 1rem);
+}
+
+html {
+  font-size: var(--BASE-FONT-PX);
+}
+
+h1 {
+  font-family: Lato, sans-serif;
+  font-size: calc((38 / var(--BASE-FONT-MEASURE)) * 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: Lato, sans-serif;
+  font-size: calc((30 / var(--BASE-FONT-MEASURE)) * 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: Lato, sans-serif;
+  font-size: calc((26 / var(--BASE-FONT-MEASURE)) * 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: Lato, sans-serif;
+  font-size: calc((22 / var(--BASE-FONT-MEASURE)) * 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: Lato, sans-serif;
+  font-size: calc((18 / var(--BASE-FONT-MEASURE)) * 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: Lato, sans-serif;
+  font-size: var(--BASE-FONT-REM);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+a {
+  color: #2e53a1;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Sections
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--BASE-FONT-REM);
+  max-width: var(--MAX-SITE-WIDTH-REM);
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: #cc4041;
+  margin-top: 3rem;
+}
+
+main {
+  margin-bottom: 3rem;
+}
+
+section {
+  background-color: #f7f5ee;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+address {
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+footer {
+  margin-bottom: 2rem;
+}
+
+footer a {
+  color: #f7f5ee;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Header
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.header {
+  background-color: #f7f5ee;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr max-content;
+  column-gap: 2rem;
+}
+
+.header__title {
+  align-self: end;
+}
+
+.header__blurb {
+  grid-column: 1 / 2;
+}
+
+.header__logo {
+  height: 100%;
+  max-height: 30vh;
+  min-width: var(--MAX-SITE-WIDTH-REM * 0.2);
+  max-width: 100%;
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
+}
+
+@media screen and (max-width: 625px) {
+  .header {
+    grid-template-columns: auto 1fr;
+    row-gap: 1rem;
+  }
+
+  .header__title {
+    grid-column: 2 / 3;
+    margin: 0;
+    font-size: calc((38 / var(--BASE-FONT-MEASURE)) * 1rem * 0.8);
+  }
+
+  .header__blurb {
+    grid-column: 1 / 3;
+  }
+
+  .header__logo {
+  height: 100%;
+  max-height: 30vh;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .header__title {
+    font-size: calc((38 / var(--BASE-FONT-MEASURE)) * 1rem * 0.5);
+  }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Kontakt
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.kontakt {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Gallery
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 0;
+}
+
+.gallery li {
+  max-width: 320px;
+  list-style: none;
+  background-color: #e0dfd9;
+}
+
+.gallery img {
+  max-width: 100%;
+}
+
+.gallery figcaption {
+  padding: 0.5rem;
+}
