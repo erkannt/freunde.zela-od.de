@@ -107,11 +107,13 @@ address {
 }
 
 footer {
-  margin-bottom: 2rem;
+  background-color: #f7f5ee;
+  padding: 2rem;
+  margin-bottom: 3rem;
 }
 
 footer a {
-  color: #f7f5ee;
+  color: black;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
